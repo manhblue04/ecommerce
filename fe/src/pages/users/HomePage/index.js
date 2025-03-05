@@ -1,8 +1,8 @@
 import { memo } from "react"
-
+import "./HomePage.css"
 function HomePage() {
     return (
-        <h1> HomePage </h1>
+        <h1 className="test"> HomePage </h1>
     )
 }
 export default memo(HomePage);
