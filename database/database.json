@@ -1,0 +1,128 @@
+{
+  "book-room": [
+    {
+      "id": "cde4",
+      "time": "14 giờ",
+      "fullName": "Nguyễn Thị Huyền",
+      "phone": "0966556026",
+      "email": "huyenmeroria@gmail.com",
+      "services": [
+        "Thuê xe máy",
+        "Thuê xe ô tô 4 chỗ"
+      ],
+      "gift": "Áo phông",
+      "date": [
+        "06/01/2025",
+        "11/01/2025"
+      ]
+    },
+    {
+      "id": "732c",
+      "time": "11 giờ",
+      "fullName": "Vũ Công Chiến",
+      "phone": "0987654321",
+      "email": "asaeds@mailpromax.com",
+      "services": [
+        "Thuê xe ô tô 7 chỗ"
+      ],
+      "gift": "Mũ",
+      "date": [
+        "25/12/2024",
+        "26/12/2024"
+      ]
+    },
+    {
+      "id": "4284",
+      "time": "14 giờ",
+      "services": [
+        "Thuê xe máy",
+        "Thuê xe ô tô 4 chỗ"
+      ],
+      "phone": "aaa",
+      "fullName": "aaaa",
+      "email": "aaaa",
+      "date": [
+        "24/03/2025",
+        "23/04/2025"
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "46d2",
+      "name": "Phòng 1",
+      "quantityBed": 3,
+      "quantityPeople": 6,
+      "description": "View nhìn ra biển",
+      "utils": [
+        "Wifi",
+        "Nóng lạnh",
+        "Điều hòa"
+      ],
+      "status": true,
+      "typeRoom": true
+    },
+    {
+      "id": "027f",
+      "name": "Phòng 2",
+      "quantityBed": 1,
+      "quantityPeople": 2,
+      "description": "Phòng trên cao ngắm mây ",
+      "utils": [
+        "Wifi",
+        "Nóng lạnh"
+      ],
+      "status": false
+    },
+    {
+      "id": "cfba",
+      "name": "Phòng 3",
+      "quantityBed": 3,
+      "quantityPeople": 6,
+      "description": "Đầy đủ",
+      "utils": [
+        "Wifi",
+        "Nóng lạnh",
+        "Điều hòa"
+      ],
+      "status": true,
+      "typeRoom": true
+    },
+    {
+      "id": "feee",
+      "name": "Phòng 4",
+      "quantityBed": 1,
+      "quantityPeople": 2,
+      "description": "Thường",
+      "utils": [
+        "Wifi"
+      ],
+      "status": true,
+      "typeRoom": false
+    },
+    {
+      "id": "e49f",
+      "name": "Phòng 5",
+      "quantityBed": 1,
+      "quantityPeople": 2,
+      "utils": [
+        "Wifi",
+        "Điều hòa"
+      ],
+      "status": false
+    },
+    {
+      "id": "1b73",
+      "name": "Phòng 6",
+      "quantityBed": 1,
+      "quantityPeople": 2,
+      "utils": [
+        "Wifi",
+        "Nóng lạnh",
+        "Điều hòa"
+      ],
+      "status": false,
+      "typeRoom": true
+    }
+  ]
+}
