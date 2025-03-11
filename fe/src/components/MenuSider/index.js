@@ -1,78 +1,106 @@
 import { Menu } from "antd";
-import { ManOutlined, WomanOutlined, SkinOutlined } from "@ant-design/icons";
+import { HomeOutlined, DashboardOutlined, LayoutOutlined, AppstoreOutlined, PieChartOutlined, FileOutlined, LockOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+
 function MenuSider() {
-  const items = [
-    {
-      label: "Menu 1",
-      icon: <ManOutlined />,
-      key: "Menu-1",
-      children: [
+    const items = [
         {
-          label: "Menu 1-1",
-          key: "Menu-1-1"
+            label: <Link to="/">Trang chủ</Link>,
+            icon: <HomeOutlined />,
+            key: "/",
+        },
+        {
+            label: <Link to="/product-list">Sản phẩm</Link>,
+            icon: <DashboardOutlined />,
+            key: "/product-list",
+            // children: [
+            //     {
+            //         label: <Link to="product-list/vegetable/">Rau củ quả</Link>,
+            //         key: "vegetable"
+            //     },
+            //     {
+            //         label: <Link to="/product-list/food">Thịt - Hải sản</Link>,
+            //         key: "food"
+            //     },
+            //     {
+            //         label: <Link to="/product-list/fast-food">Đồ ăn sẵn</Link>,
+            //         key: "fast-food"
+            //     },
+            //     {
+            //         label: <Link to="/product-list/drink">Đồ uống</Link>,
+            //         key: "drink"
+            //     },
+            //     {
+            //         label: <Link to="/product-list/confectionery">Bánh kẹo</Link>,
+            //         key: "confectionery"
+            //     },
+            //     {
+            //         label: <Link to="/product-list/spice">Gia vị - Đồ khô</Link>,
+            //         key: "spice"
+            //     }
+            // ]
+        },
+        {
+            label: <Link to="/top-product-list">Sản phẩm nổi bật</Link>,
+            icon: <DashboardOutlined />,
+            key: "/top-product-list",
+        },
+        {
+            label: <Link to="/news">Tin tức nổi bật</Link>,
+            icon: <DashboardOutlined />,
+            key: "/news",
+        },
+        // {
+        //     label: "Dashboard",
+        //     icon: <DashboardOutlined />,
+        //     key: "menu-1",
+        //     children: [
+        //         {
+        //             label: <Link to="/dash-board">Dashboard</Link>,
+        //             key: "/dash-board"
+        //         },
+        //         {
+        //             label: "Menu 1 - 2",
+        //             key: "menu-1-2"
+        //         },
+        //         {
+        //             label: "Menu 1 - 3",
+        //             key: "menu-1-3"
+        //         },
+        //     ]
+        // },
+        // {
+        //     label: <Link to="/book-room">Book Room</Link>,
+        //     icon: <LayoutOutlined />,
+        //     key: "/book-room"
+        // },
+        // {
+        //     label: <Link to="/create-room">Create Room</Link>,
+        //     icon: <PieChartOutlined />,
+        //     key: "/create-room"
+        // },
+        // {
+        //     label: <Link to="/list-room">List Room</Link>,
+        //     icon: <FileOutlined />,
+        //     key: "/list-room"
+        // },
+        // {
+        //     label: "Authentication",
+        //     icon: <LockOutlined />,
+        //     key: "menu-6"
+        // },
+    ];
 
-          // label: <Link to="/hoodi">Ao hoodi</Link>,
-          // key: "/hoodi"
-        }, 
-        {
-          label: "Menu 1-2",
-          key: "Menu-1-2"
-        }, 
-        {
-          label: "Menu 1-3",
-          key: "Menu-1-3"
-        }
-      ]
-    },
-    {
-      label: "Menu 2",
-      icon: <WomanOutlined />,
-      children: [
-        {
-          label: "Menu 2-1",
-          key: "Menu-2-1"
-        }, 
-        {
-          label: "Menu 2-2",
-          key: "Menu-2-2"
-        }, 
-        {
-          label: "Menu 2-3",
-          key: "Menu-2-3"
-        }
-      ]
-    },
-    {
-      label: "Menu 3",
-      icon: <SkinOutlined />,
-      children: [
-        {
-          label: "Menu 3-1",
-          key: "Menu-3-1"
-        }, 
-        {
-          label: "Menu 3-2",
-          key: "Menu-3-2"
-        }, 
-        {
-          label: "Menu 3-3",
-          key: "Menu 3-3"
-        }
-      ]
-      
-    }
-  ];
-
-  return (
-    <>
-      <Menu
-        mode="inline"
-        items={items}
-        defaultSelectedKeys={["Menu-1-1"]}
-        defaultOpenKeys={["Menu-1"]}
-      />
-    </>
-
-  )
+    return (
+        <>
+            <Menu
+                mode="inline"
+                items={items}
+                defaultSelectedKeys={["/"]}
+                defaultOpenKeys={["/"]}
+            />
+        </>
+    );
 }
+
 export default MenuSider;

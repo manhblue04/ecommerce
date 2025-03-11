@@ -1,8 +1,11 @@
-import RouterCustom from "./router";
+import "./App.css";
+import AllRoutes from "./components/AllRoutes";
 
 function App() {
   return (
-    <RouterCustom />
+    <>
+      <AllRoutes />
+    </>
   );
 }
 
