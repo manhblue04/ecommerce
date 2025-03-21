@@ -1,0 +1,48 @@
+.footer {
+    background: #f8f8f8;
+    padding: 40px 20px;
+    
+    &__column {
+      text-align: left;
+    }
+  
+    &__subscribe {
+      display: flex;
+      gap: 10px;
+      margin: 10px 0;
+    }
+  
+    &__social {
+      margin-top: 10px;
+      display: flex;
+      gap: 15px;
+    }
+  
+    &__icon {
+      font-size: 24px;
+      cursor: pointer;
+      transition: color 0.3s;
+  
+      &:hover {
+        color: #1890ff;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .footer__column {
+        text-align: center;
+      }
+  
+      .footer__subscribe {
+        justify-content: center;
+      }
+  
+      .footer__social {
+        justify-content: center;
+      }
+    }
+  }
+  
+.container{
+    padding: 40px 80px;
+}

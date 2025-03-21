@@ -1,17 +1,20 @@
 import { Layout } from "antd";
-import "./LayoutDefault.css";
-import logo from "../../images/logo.png";
-import logoFold from "../../images/logo-fold.png";
 import { SearchOutlined, MenuFoldOutlined, MenuUnfoldOutlined, MailOutlined, LinkedinOutlined, TwitterOutlined, InstagramOutlined, FacebookOutlined } from "@ant-design/icons";
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
+import { formater } from "../../utils/fomater.js";
+
+import Footer from "../Footer/index.js";
 import Notify from "../../components/Notify";
 import MenuSider from "../../components/MenuSider";
-import { formater } from "../../utils/fomater.js";
-import { Outlet } from "react-router-dom";
-const { Sider, Content } = Layout;
+import logo from "../../images/logo.png";
+import logoFold from "../../images/logo-fold.png";
+import "./LayoutDefault.css";
 
 
 function LayoutDefault() {
+
+  const { Sider, Content } = Layout;
   const [collapsed, setCollapsed] = useState(false);
 
   return (
@@ -60,6 +63,7 @@ function LayoutDefault() {
             <Outlet />
           </Content>
         </Layout>
+        <Footer />
       </Layout>
     </>
   );

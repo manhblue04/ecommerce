@@ -15,3 +15,70 @@ code {
 .mt-20 {
   margin-top: 20px;
 }
+
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Đặt font và kích thước mặc định */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Xóa bỏ style mặc định của list */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Đặt lại các style mặc định của thẻ a */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Làm sạch thẻ button */
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Reset các thẻ form */
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Reset thẻ img */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Đảm bảo các thẻ block không có padding/margin bất thường */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
